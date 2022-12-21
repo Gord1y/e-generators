@@ -214,6 +214,11 @@ select {
   color: #fff;
   align-items: center;
   &__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     p {
       font-size: 20px;
       line-height: 22px;
@@ -227,6 +232,7 @@ select {
       width: 250px;
       height: 40px;
       padding-left: 10px;
+      margin: 0 auto;
     }
   }
   button {
@@ -240,6 +246,11 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 25px 0;
+  }
+  p {
+    font-size: 28px;
+    text-align: center;
   }
 }
 
@@ -260,4 +271,33 @@ select {
   height: 100px;
   background: #323232;
   color: #fff;
+}
+
+.swiper {
+  width: 30%;
+  height: fit-content;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  margin: 0 !important;
+  @media screen and (width < 1000px) {
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  width: 100% !important;
+  padding: 50px 30px;
+  img {
+    margin: 0 auto;
+  }
+}
+:root {
+  --swiper-theme-color: #111 !important;
 }

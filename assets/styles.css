@@ -277,6 +277,22 @@ select {
       -ms-flex-align: center;
           align-items: center;
 }
+.form__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
 .form__div p {
   font-size: 20px;
   line-height: 22px;
@@ -290,6 +306,7 @@ select {
   width: 250px;
   height: 40px;
   padding-left: 10px;
+  margin: 0 auto;
 }
 .form button {
   background-color: #323232;
@@ -308,6 +325,11 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 25px 0;
+}
+.form p {
+  font-size: 28px;
+  text-align: center;
 }
 
 #hidden {
@@ -333,4 +355,38 @@ select {
   height: 100px;
   background: #323232;
   color: #fff;
+}
+
+.swiper {
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  margin: 0 !important;
+}
+@media screen and (width < 1000px) {
+  .swiper {
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  width: 100% !important;
+  padding: 50px 30px;
+}
+.swiper-slide img {
+  margin: 0 auto;
+}
+
+:root {
+  --swiper-theme-color: #111 !important;
 }
