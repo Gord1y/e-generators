@@ -76,6 +76,10 @@ select {
 :root {
   --swiper-theme-color: #111 !important;
 }
+:root .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #111;
+}
 
 .wrapper {
   overflow: hidden;
@@ -192,9 +196,37 @@ select {
     margin-top: 50px;
   }
 }
-.block img {
-  width: 90%;
+.block .swiper {
+  width: 30%;
   max-width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  height: fit-content;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  margin: 0 !important;
+}
+@media screen and (max-width: 1000px) {
+  .block .swiper {
+    width: 100%;
+  }
+}
+.block .swiper .swiper-slide {
+  width: 100% !important;
+  max-width: 500px;
+  padding: 50px 30px;
+}
+.block .swiper .swiper-slide img {
+  width: 100%;
+  margin: 0 auto;
 }
 .block p {
   font-size: 24px;
@@ -359,36 +391,4 @@ select {
   height: 100px;
   background: #323232;
   color: #fff;
-}
-
-.swiper {
-  width: 30%;
-  max-width: 500px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  margin: 0 !important;
-}
-@media screen and (max-width: 1000px) {
-  .swiper {
-    width: 100%;
-  }
-}
-
-.swiper-slide {
-  width: 100% !important;
-  max-width: 500px;
-  padding: 50px 30px;
-}
-.swiper-slide img {
-  margin: 0 auto;
 }
