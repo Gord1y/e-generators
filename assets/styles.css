@@ -73,6 +73,10 @@ select {
     scroll-behavior: auto !important;
   }
 }
+:root {
+  --swiper-theme-color: #111 !important;
+}
+
 .wrapper {
   overflow: hidden;
   min-height: 100%;
@@ -359,6 +363,7 @@ select {
 
 .swiper {
   width: 30%;
+  max-width: 500px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -381,12 +386,9 @@ select {
 
 .swiper-slide {
   width: 100% !important;
+  max-width: 500px;
   padding: 50px 30px;
 }
 .swiper-slide img {
   margin: 0 auto;
-}
-
-:root {
-  --swiper-theme-color: #111 !important;
 }
