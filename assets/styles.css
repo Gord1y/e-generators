@@ -227,6 +227,7 @@ select {
 .block .swiper .swiper-slide img {
   width: 100%;
   margin: 0 auto;
+  max-height: 400px;
 }
 .block p {
   font-size: 24px;
@@ -391,4 +392,40 @@ select {
   height: 100px;
   background: #323232;
   color: #fff;
+}
+
+.status-label[_ngcontent-rz-client-c272] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 250px;
+  gap: 10px;
+}
+
+.status-label[_ngcontent-rz-client-c272] svg[_ngcontent-rz-client-c272] {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  fill: currentColor;
+}
+
+.status-label--green[_ngcontent-rz-client-c272] {
+  background-color: #ecf5ef;
+  color: #00a046;
 }

@@ -180,6 +180,7 @@ select {
       img {
         width: 100%;
         margin: 0 auto;
+        max-height: 400px;
       }
     }
   }
@@ -301,4 +302,26 @@ select {
   height: 100px;
   background: #323232;
   color: #fff;
+}
+.status-label[_ngcontent-rz-client-c272] {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  width: 250px;
+  gap: 10px;
+}
+.status-label[_ngcontent-rz-client-c272] svg[_ngcontent-rz-client-c272] {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  fill: currentColor;
+}
+.status-label--green[_ngcontent-rz-client-c272] {
+  background-color: #ecf5ef;
+  color: #00a046;
 }
